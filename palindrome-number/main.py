@@ -1,8 +1,6 @@
-x = 121
+class Solution:
+    def isPalindrome(self, x: int) -> bool:
 
-
-if x < 0:
-    print('bananna') 
-    exit()
-
-print(x == int((str(x))[::-1]))
+        if x < 0:
+            return False
+        return x == int((str(x))[::-1])

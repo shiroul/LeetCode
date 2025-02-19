@@ -1,18 +1,12 @@
-nums = [3,2,4]
-target = 6
+class Solution:
+    def twoSum(self, nums: List[int], target: int) -> List[int]:
+        temp = {}
+        output = 0
 
-temp = {}
-output = 0
+        for i, num in enumerate(nums):
+            output = target - num
 
-for i, num in enumerate(nums):
-    output = target - num
+            if output in temp:
+                return [temp[output] , i]
 
-    if output in temp:
-        print('banananna')
-        break
-
-    print(output, temp, output in temp)
-
-    temp[num] = i
-    
-    
+            temp[num] = i
