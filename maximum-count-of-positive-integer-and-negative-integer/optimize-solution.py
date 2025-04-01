@@ -1,3 +1,6 @@
+#runtime : 0ms
+#beats : 100%
+
 class Solution:
     def maximumCount(self, nums: List[int]) -> int:
         pos = neg = 0
