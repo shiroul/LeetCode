@@ -1,0 +1,15 @@
+#runtime : 2ms
+
+class Solution:
+    def findNumbers(self, nums: List[int]) -> int:
+        output = 0
+        for x in nums:
+            output = output+1 if self.countDigits(x) % 2 == 0 else output
+        return output
+
+    def countDigits(self, x):
+        count = 0
+        while x > 0:
+            x//=10
+            count +=1
+        return count
