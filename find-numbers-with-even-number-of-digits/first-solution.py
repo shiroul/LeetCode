@@ -1,3 +1,5 @@
+#runtime : 3ms
+
 class Solution:
     def findNumbers(self, nums: List[int]) -> int:
         output = 0
